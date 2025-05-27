@@ -1,0 +1,82 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-section, .result-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 45%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-section h2, .result-section h2 {
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="date"], input[type="text"] {
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .form-section, .result-section {
+    flex: 1 1 100%;
+  }
+}
